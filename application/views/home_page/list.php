@@ -306,7 +306,7 @@
 							</div>
 							<div class="lqd-column col-md-6 pl-md-6 pr-md-7">
 							<header class="fancy-title mb-35">
-							<p>Being the Ave’s business, that is, the person see pulled You have seen Italian organ boys holding a dancing. Lorema dolor sit amet, consectetur adipisicing elit sed.</p>
+							<p>Ansell Business Intelligence is the virtual platform that helps the World's farmers monitoring their farms produce information can be found with the best user experience, even controlling their farms from long distance.</p>
 							</header>
 							</div>
 							</div>
