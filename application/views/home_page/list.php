@@ -59,7 +59,7 @@
 							
 							<div class="col pr-5">
 								<div class="navbar-header">
-									<a class="navbar-brand pt-10 pb-10" href="index-virtus-3.html" rel="home">
+									<a class="navbar-brand pt-10 pb-10" href="" rel="home">
 										<span class="navbar-brand-inner">
 											<img class="logo-sticky" src="assets/web/assets/logo-webk.png" alt="Ansell Business Intelligence" style="width: 150px">
 											<img class="mobile-logo-default" src="assets/web/assets/logo-webk.png" alt="Ansell Business Intelligence" style="width: 150px">
@@ -138,7 +138,7 @@
 							<div class="col text-right">
 
 								<div class="header-module">
-									<a href="login" class="btn btn-solid text-uppercase circle btn-bordered border-thick font-size-12 lh-15 font-weight-bold ltr-sp-2 px-2">
+									<a href="http://bi.anselljaya.com" class="btn btn-solid text-uppercase circle btn-bordered border-thick font-size-12 lh-15 font-weight-bold ltr-sp-2 px-2">
 										<span>
 											<span class="btn-txt">Login</span>
 										</span>
