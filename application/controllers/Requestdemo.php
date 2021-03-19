@@ -47,7 +47,7 @@ class Requestdemo extends CI_Controller {
                 'name' => $nama,
                 'company' => $company,
                 'email' => $email,
-                'phonenumber' => $phone
+                'phonenumber' => $code.$phone
             ];
             $this->db->insert("data_demo", $datadm);
             echo json_encode([
