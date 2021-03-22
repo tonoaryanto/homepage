@@ -17,12 +17,11 @@ class Requestdemo extends CI_Controller {
 		$phone = str_replace("+","",$this->input->post('phone'));
 
         //Validasi
-        $input = "";
-        if($this->cek_karakter('text',strtolower($nama)) == 1){$status = 1; $input = "name";}
-		if($this->cek_karakter('text',strtolower($company)) == 1 or $status == 1){$status = 1; $input = "company";}
-		if($this->cek_karakter('email',strtolower($email)) == 1 or $status == 1){$status = 1; $input = "email";}
-		if($this->cek_karakter('number',$code) == 1 or $status == 1){$status = 1; $input = "code phone";}
-		if($this->cek_karakter('number',$phone) == 1 or $status == 1){$status = 1; $input = "number phone";}
+		if($this->cek_karakter('number',$phone) == 1 or $phone == ""){$status = 1;}
+        if($this->cek_karakter('number',$code) == 1 or $code == ""){$status = 1;}
+        if($this->cek_karakter('email',strtolower($email)) == 1 or $email == ""){$status = 1;}
+        if($this->cek_karakter('text',strtolower($company)) == 1 or $company == ""){$status = 1;}
+        if($this->cek_karakter('text',strtolower($nama)) == 1 or $nama == ""){$status = 1;}
 
 		if($status == 1){
 			echo json_encode([
@@ -79,13 +78,12 @@ class Requestdemo extends CI_Controller {
 		$email = $this->input->post('email');
 
         //Validasi
-         $input = "";
-         if($this->cek_karakter('number',strtolower($rawphone)) == 1 or $rawphone == ""){$status = 1; $input = "number phone";}
-         if($this->cek_karakter('number',strtolower($code)) == 1 or $code == ""){$status = 1; $input = "code phone";}
-         if($this->cek_karakter('email',strtolower($email)) == 1 or $email == "" or $status == 1){$status = 1; $input = "email";}
-         if($this->cek_karakter('text',$company) == 1 or $company == "" or $status == 1){$status = 1; $input = "company";}
-         if($this->cek_karakter('text',$nama) == 1 or $nama == "" or $status == 1){$status = 1; $input = "name";}
- 
+         if($this->cek_karakter('number',$rawphone) == 1 or $rawphone == ""){$status = 1;}
+         if($this->cek_karakter('number',$code) == 1 or $code == ""){$status = 1;}
+         if($this->cek_karakter('email',strtolower($email)) == 1 or $email == ""){$status = 1;}
+         if($this->cek_karakter('text',strtolower($company)) == 1 or $company == ""){$status = 1;}
+         if($this->cek_karakter('text',strtolower($nama)) == 1 or $nama == ""){$status = 1;}
+  
          if($status == 1){
              echo json_encode([
                  'status'  => false,
