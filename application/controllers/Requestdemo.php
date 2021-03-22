@@ -14,7 +14,10 @@ class Requestdemo extends CI_Controller {
 		$company = $this->input->post('company');
 		$email = $this->input->post('email');
 		$code = str_replace("+","",$this->input->post('code'));
-		$phone = str_replace("+","",$this->input->post('phone'));
+        $code = str_replace(" ","",$code);
+
+        $phone = str_replace("+","",$this->input->post('phone'));
+        $phone = str_replace(" ","",$phone);
 
         //Validasi
 		if($this->cek_karakter('number',$phone) == 1 or $phone == ""){$status = 1;}
@@ -63,14 +66,11 @@ class Requestdemo extends CI_Controller {
     {
         $status = 0;
         $phoneser = "6282111184578";
-        $rawcode = $this->input->post('code');
-        $rawextr2 = "";
-		$extr2 = explode("+",$rawcode);
-        for ($i=0; $i < count($extr2); $i++) {
-            $rawextr2 = $rawextr2.$extr2[$i];
-        }
-        $code = $rawextr2;
-        $rawphone = $this->input->post('phone');
+        $code = str_replace("+","",$this->input->post('code'));
+        $code = str_replace(" ","",$code);
+
+        $rawphone = str_replace("+","",$this->input->post('phone'));
+        $rawphone = str_replace(" ","",$rawphone);
         $phone = $code.$rawphone;
 
         $nama = $this->input->post('name');
@@ -133,7 +133,7 @@ class Requestdemo extends CI_Controller {
 			return preg_match('/[^0-9 \+]/',$var2);
 		}
 		if($var1 =='email'){
-			return preg_match('/[^a-z0-9 \_\@\-\.]/',$var2);
+			return preg_match('/[^a-z0-9\_\@\-\.]/',$var2);
 		}
 	}
 }
