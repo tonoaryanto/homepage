@@ -18,9 +18,9 @@ class Requestdemo extends CI_Controller {
 
         //Validasi
         $input = "";
-        if($this->cek_karakter('text',$nama) == 1){$status = 1; $input = "name";}
-		if($this->cek_karakter('text',$company) == 1 or $status == 1){$status = 1; $input = "company";}
-		if($this->cek_karakter('email',$email) == 1 or $status == 1){$status = 1; $input = "email";}
+        if($this->cek_karakter('text',strtolower($nama)) == 1){$status = 1; $input = "name";}
+		if($this->cek_karakter('text',strtolower($company)) == 1 or $status == 1){$status = 1; $input = "company";}
+		if($this->cek_karakter('email',strtolower($email)) == 1 or $status == 1){$status = 1; $input = "email";}
 		if($this->cek_karakter('number',$code) == 1 or $status == 1){$status = 1; $input = "code phone";}
 		if($this->cek_karakter('number',$phone) == 1 or $status == 1){$status = 1; $input = "number phone";}
 
