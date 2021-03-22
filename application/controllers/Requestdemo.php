@@ -32,8 +32,6 @@ class Requestdemo extends CI_Controller {
 			return;
 		}
 		//END Validasi
-        $nama = str_replace(" ","+",$nama);
-        $company = str_replace(" ","+",$company);
 
         $dtsend = "";
         $dtsend .= "&phonenumber=".$code.$phone;
