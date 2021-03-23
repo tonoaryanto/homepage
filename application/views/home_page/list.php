@@ -8,7 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#3ed2a7">
     <meta name="description" content="Ansell Business Intelligence">
-    <base href="<?php echo base_url(); ?>">
+	<meta property="og:site_name" content="Ansell Business Intelligence">
+	<meta property="og:title" content="Ansell Business Intelligence" />
+	<meta property="og:description" content="Ansell Business Intelligence is the virtual platform that helps the World's farmers monitoring their farms produce information can be found with the best user experience." />
+	<meta property="og:image" itemprop="image" content="https://abi.anselljaya.com/assets/web/assets/icon.png">
+	<meta property="og:type" content="website" />
+	<base href="<?php echo base_url(); ?>">
 	
 	<link rel="shortcut icon" href="assets/web/assets/icon.png" />
 	
