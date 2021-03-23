@@ -138,7 +138,7 @@
 							<div class="col text-right">
 
 								<div class="header-module">
-									<a href="http://bi.anselljaya.com" class="btn btn-solid text-uppercase circle btn-bordered border-thick font-size-12 lh-15 font-weight-bold ltr-sp-2 px-2">
+									<a href="https://bi.anselljaya.com" class="btn btn-solid text-uppercase circle btn-bordered border-thick font-size-12 lh-15 font-weight-bold ltr-sp-2 px-2">
 										<span>
 											<span class="btn-txt">Login</span>
 										</span>
@@ -602,19 +602,15 @@
 				<div class="container">
 					<div class="row d-flex flex-wrap align-items-center">
 	
-						<div class="lqd-column col-md-3 col-xs-12 text-center text-md-left mb-4 mb-md-0">
+						<div class="lqd-column col-md-4 col-xs-12 text-center text-md-left mb-4 mb-md-0">
+							<a href="https://anselljaya.com"><img src="assets/email/ansell.png" style="height:60px;"></a>		
+						</div><!-- /.col-md-3 col-xs-12 -->
 	
+						<div class="lqd-column col-md-4 col-xs-12 text-center mb-4 mb-md-0">
 							©2020 Ansell. All rights reserved.	
-	
 						</div><!-- /.col-md-3 col-xs-12 -->
 	
-						<div class="lqd-column col-md-3 col-xs-12 text-center mb-4 mb-md-0">
-						</div><!-- /.col-md-3 col-xs-12 -->
-
-						<div class="lqd-column col-md-3 col-xs-12 text-center mb-4 mb-md-0">
-						</div><!-- /.col-md-3 col-xs-12 -->
-	
-						<div class="lqd-column col-md-3 col-xs-12 text-center text-md-right">
+						<div class="lqd-column col-md-4 col-xs-12 text-center text-md-right">
 	
 							<ul class="social-icon social-icon-md">
 								<li><a href="https://www.facebook.com/anselljaya/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
